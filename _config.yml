@@ -10,7 +10,6 @@ github_username:  LudovicT
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
 categories: [skill, experience, project, personnal]
 submenu: [true, false]
 show_in_menu: [true, false]
