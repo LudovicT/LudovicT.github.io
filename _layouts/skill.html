@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<header class="skill-header">
+    <h3 class="skill-title">{{ page.title }}</h3>
+</header>
+<article class="skill-content">
+    {{ content }}
+</article>
+<div class="related-projects">
+    <span class="tag">Projets:</span>
+    {% include related_project.html related_projects=page.related_project %}
+</div>

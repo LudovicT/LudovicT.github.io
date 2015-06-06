@@ -1,2 +1,11 @@
 _site
 .sass-cache
+
+*.dll
+*.dll.*
+bin/
+Content/
+Scripts/
+App_Code/
+packages.config
+Web.config
