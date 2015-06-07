@@ -234,3 +234,15 @@
         }
     }
 }
+
+/**
+ * Site related
+ */
+.related-content {
+    border-top: 1px solid $grey-color-light;
+    padding: $spacing-unit 0 0 0;
+    margin: $spacing-unit*2 0 0 0;
+}
+.related-skills {
+    padding: $spacing-unit/2 0 0 0;
+}

@@ -1,5 +1,5 @@
 # Site settings
-title: Portfolio Ludovic Tresson
+title: Portfolio de Ludovic Tresson
 email: tresson@intechinfo.fr
 description: > # this means to ignore newlines until "baseurl:"
   Bienvenue sur mon Portfolio
@@ -10,7 +10,7 @@ github_username:  LudovicT
 
 # Build settings
 markdown: kramdown
-categories: [skill, experience, project, personnal]
+categories: [skill, path, project, personnal]
 submenu: [true, false]
 show_in_menu: [true, false]
 username: Ludovic Tresson

@@ -1,15 +1,15 @@
-﻿{% for page in site.pages %}
-    {% if page.categories contains 'skill' and page.related_project contains include.projectname %}
-        {% if page.categories contains 'language' %}
-            <a href="{{page.url}}"class="tag success">{{page.title}}</a>
-        {% elsif page.categories contains 'framework' %}
-            <a href="{{page.url}}" class="tag info">{{page.title}}</a>
-        {% elsif page.categories contains 'software' %}
-            <a href="{{page.url}}" class="tag alert">{{page.title}}</a>  
-        {% elsif page.categories contains 'project_management' %}
-            <a href="{{page.url}}" class="tag warning">{{page.title}}</a>
-        {% else %}
-            <a href="{{page.url}}" class="tag">{{page.title}}</a>
-        {% endif %}
-    {% endif %}
+{% for page in site.pages %}
+	{% if page.categories contains 'skill' and page.related_project contains include.projectname %}
+		{% if page.categories contains 'language' %}
+			<a href="{{page.url}}"class="tag success">{{page.title}}</a>
+		{% elsif page.categories contains 'framework' %}
+			<a href="{{page.url}}" class="tag info">{{page.title}}</a>
+		{% elsif page.categories contains 'software' %}
+			<a href="{{page.url}}" class="tag alert">{{page.title}}</a>  
+		{% elsif page.categories contains 'project_management' %}
+			<a href="{{page.url}}" class="tag warning">{{page.title}}</a>
+		{% else %}
+			<a href="{{page.url}}" class="tag">{{page.title}}</a>
+		{% endif %}
+	{% endif %}
 {% endfor %}

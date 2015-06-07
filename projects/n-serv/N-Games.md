@@ -5,6 +5,6 @@ show_in_menu: true
 categories: [project, n-serv]
 submenu: true
 menuitem: N-Serv
-related_experience: N-Games.fr
+related_path: N-Games.fr
 ---
 

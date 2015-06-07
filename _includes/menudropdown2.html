@@ -2,12 +2,8 @@
 	<a class="dropdown-toggle" href="#">{{ include.name }}</a>
 	<ul class="dropdown-menu dark" data-role="dropdown">
 		{% for page in site.pages %}
-			{% if page.menuitem == include.name %}
-				{% if page.categories contains include.category %}
-					{% if page.title %}
-						<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-					{% endif %}
-				{% endif %}
+			{% if page.menuitem == include.name and page.categories contains include.category and page.title %}
+					<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 			{% endif %}
 		{% endfor %}
 	</ul>

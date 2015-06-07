@@ -1,0 +1,1 @@
+{% for page in site.pages %}{% if page.title == include.name %}[{{page.title}}]({{page.url | prepend: site.baseurl}}){% break %}{% endif %}{% endfor %}

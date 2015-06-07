@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<header class="path-header">
+	<h3 class="path-title">{{ page.title }}</h3>
+</header>
+<article class="path-content">
+	{{ content }}
+</article>
+<div class="related-content">
+	<div class="related-projects">
+		<span class="tag description">Projets:</span>
+		{% include related_path.html title=page.title %}
+	</div>
+</div>

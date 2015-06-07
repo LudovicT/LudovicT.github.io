@@ -2,16 +2,18 @@
 layout: default
 ---
 <header class="project-header">
-    <h3 class="project-title">{{ page.title }}</h3>
+	<h3 class="project-title">{{ page.title }}</h3>
 </header>
 <article class="project-content">
-    {{ content }}
+	{{ content }}
 </article>
-<div class="related-experience">
-    <span class="tag">Expérience:</span>
-    {% include related_project_2.html related_experiences=page.related_experience %}
-</div>
-<div class="related-skills">
-    <span class="tag">Compétences:</span>
-    {% include related_skill.html projectname=page.title %}
+<div class="related-content">
+	<div class="related-path">
+		<span class="tag description">Expérience:</span>
+		{% include related_project_2.html related_paths=page.related_path %}
+	</div>
+	<div class="related-skills">
+		<span class="tag description">Compétences:</span>
+		{% include related_skill.html projectname=page.title %}
+	</div>
 </div>

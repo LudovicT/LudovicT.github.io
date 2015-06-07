@@ -1,8 +1,8 @@
 ---
-layout: experience
+layout: path
 title: Alternance
 show_in_menu: true
-categories: [experience, candriam]
+categories: [path, candriam]
 submenu: true
 menuitem: Candriam
 ---
