@@ -4906,7 +4906,7 @@ a {
 	display: none;
 	z-index: 1000;
 	background: #ffffff;
-	min-width: 220px;
+	white-space: nowrap;
 	width: auto;
 	border: 1px solid #dcddde;
 }
@@ -5167,7 +5167,7 @@ a {
 		}
 
 			.metro .dropdown-menu.dark li a {
-				padding: 9px 32px !important;
+				padding: 9px 20px 9px 20px !important;
 				color: inherit;
 			}
 
@@ -5189,6 +5189,11 @@ a {
 				border: 0;
 				background-color: #201a1a;
 				color: #ffffff;
+			}
+
+			.metro .dropdown-menu.dark li li a {
+				padding: 9px 28px !important;
+				color: inherit;
 			}
 
 		.metro .dropdown-menu.dark .menu-title {

@@ -13337,7 +13337,7 @@
 	
 	
 		/**
-		 * Software version
+		 * Hard Skill version
 		 *  @type string
 		 *  @deprecated Since v1.10
 		 */

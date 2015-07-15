@@ -11,9 +11,9 @@ related_path: [Alternance, Stage]
 MasterPrice est une application déjà existante chez CANDRIAM, la société qui m’a pris en stage puis en alternance.  
 L’application sert à gérer les prix d’instruments financier.  
 Le projet consiste  à migrer d’une application lourde à une application Web en intranet.  
-Ma mission est de développer la nouvelle IHM MasterPrice ainsi que les services qui vont renvoyer des données aux autres départements.  
---------------------------------------------------------------
+Ma mission est de développer la nouvelle IHM MasterPrice ainsi que les services qui vont renvoyer des données aux autres départements.
 
+***
 Lors de ce projet j’ai pu mettre en application et m’améliorer ou apprendre les compétences et technologies suivantes :  
 
 
@@ -35,7 +35,7 @@ L’IHM Web est intégralement développé en utilisant ASP.NET, en utilisant no
 
 L’IHM utilise bien sûr les technologies {% include link.html name='HTML' %} et {% include link.html name='CSS' %} pour le contenue et le formatage des pages.  
 Un des prérequis a été le fonctionnement sous Internet Explorer 8.  
-Il y a de nombreuses interactions {% include link.html name='JavaScript' %}, notamment avec les Frameworks {% include link.html name='JQuery' %} et {% include link.html name='DataTables' %}
+Il y a de nombreuses interactions {% include link.html name='JavaScript' %}, notamment avec les Hard Skill {% include link.html name='JQuery' %} et {% include link.html name='DataTables' %}
 
 >{% include link.html name='WCF' %}
 

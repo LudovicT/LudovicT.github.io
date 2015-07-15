@@ -1,13 +1,19 @@
 {% for page in site.pages %}
-	{% if page.categories contains 'project' and include.related_projects contains page.title %}
-		{% if page.categories contains 'intech' %}
-			<a href="{{page.url}}" class="tag intechinfo">{{page.menuitem}} - {{page.title}}</a>
-		{% elsif page.categories contains 'candriam' %}
-			<a href="{{page.url}}" class="tag candriam">{{page.menuitem}} - {{page.title}}</a>
-		{% elsif page.categories contains 'n-serv' %}
-			<a href="{{page.url}}" class="tag n-serv">{{page.menuitem}} - {{page.title}}</a>  
-		{% else %}
-			<a href="{{page.url}}" class="tag">{{page.menuitem}} - {{page.title}}</a>
-		{% endif %}
+	{% if page.categories contains 'project' %}
+		{% for desc_hash in include.related_projects %}
+			{% for desc in desc_hash %}
+				{% if desc[0] == page.title %}
+					{% if page.categories contains 'intech' %}
+						<a href="{{page.url}}" class="tag intechinfo">{{page.menuitem}} - {{page.title}}</a>
+					{% elsif page.categories contains 'candriam' %}
+						<a href="{{page.url}}" class="tag candriam">{{page.menuitem}} - {{page.title}}</a>
+					{% elsif page.categories contains 'n-serv' %}
+						<a href="{{page.url}}" class="tag n-serv">{{page.menuitem}} - {{page.title}}</a>  
+					{% else %}
+						<a href="{{page.url}}" class="tag">{{page.menuitem}} - {{page.title}}</a>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
 	{% endif %}
 {% endfor %}
