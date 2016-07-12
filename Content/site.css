@@ -1,0 +1,562 @@
+﻿body {
+    width: 100%;
+    color: #1B1B1B;
+    overflow-x: hidden;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+    a:hover, a:focus {
+        color: #5295d4;
+    }
+
+.pagecontent a {
+    border-bottom: 1px solid #171818;
+}
+
+#tile-x5 {
+    width: 990px !important;
+    min-width: 990px !important;
+    margin: 0 auto;
+}
+
+    #tile-x5 .image-overlay p {
+        display: none;
+    }
+
+    #tile-x5 .image-overlay h4 {
+        font-size: 0.9em;
+    }
+
+#tile-large-x3 {
+    width: 1074px !important;
+    min-width: 1074px !important;
+    margin: 0 auto;
+}
+
+#tile-large-x1 {
+    width: 358px !important;
+    min-width: 358px !important;
+    margin: 0 auto;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: .4;
+}
+
+.extendfull, .extendleft {
+    padding-left: 3000px;
+    margin-left: -3000px;
+}
+
+.extendfull, .extendright {
+    padding-right: 3000px;
+    margin-right: -3000px;
+}
+
+.tile-container a {
+    color: black;
+}
+
+.large-button {
+    line-height: 2.3rem !important;
+}
+
+/*.page-content {
+    padding-top: 68px;
+}*/
+
+.app-bar > .container {
+    padding: 10px !important;
+}
+
+.app-bar .app-bar-menu > li {
+    margin-right: 35px !important;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+.app-bar.navy .app-bar-element:focus, .app-bar.navy .app-bar-menu > li:focus, .app-bar.navy .app-bar-menu > li > a:focus, .app-bar.navy .app-bar-element:active, .app-bar.navy .app-bar-menu > li:active, .app-bar.navy .app-bar-menu > li > a:active {
+    background-color: #005696;
+}
+
+.app-bar .app-bar-menu > li:focus, .app-bar .app-bar-menu > li > a:focus, .app-bar .app-bar-menu > li:active, .app-bar .app-bar-menu > li > a:active {
+    background-color: #005696;
+}
+
+.image-container a:focus .image-overlay {
+    opacity: 1;
+}
+
+.app-bar .app-bar-element.branding > img {
+    margin-top: -5px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.page-content .forced {
+    height: 100%;
+}
+
+.bg-navy {
+    background-color: #0072C6;
+}
+
+.op-blacker {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+#work {
+    padding-top: 20px;
+}
+
+    #work * {
+        margin: 0 auto 1.5rem;
+        max-width: 45rem;
+    }
+
+    #work ul, #work li {
+        margin: 0 auto auto;
+    }
+
+    #work p, #work ul {
+        display: block;
+        text-align: left;
+    }
+
+#footer {
+    padding: 2rem 0;
+}
+
+#contact, #about {
+    max-width: 45rem;
+    text-align: left;
+}
+
+    #about p {
+        margin: 2.5em 0;
+        font-size: 1.1rem;
+        max-width: 45rem;
+    }
+
+    #about h3 {
+        font-weight: bold;
+    }
+
+    #about #experience {
+        margin-bottom: 3em;
+    }
+
+#contact {
+    max-width: 45rem;
+    text-align: center;
+}
+
+    #contact h1, #about h1 {
+        margin-top: 1em;
+        max-width: 45rem;
+        font-size: 3.25rem;
+    }
+
+    #contact p {
+        margin: 4em 0;
+        font-size: 1.1rem;
+        max-width: 45rem;
+    }
+
+        #contact p.email {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 3rem 0;
+            display: block;
+            text-align: center;
+        }
+
+        #contact p a {
+            border-bottom: 1px solid #171818;
+        }
+
+            #contact p a:hover, #contact p a:focus {
+                border-bottom: 1px solid #5295d4;
+            }
+
+#banner {
+    background: #000000 url('images/background.jpg') no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url('images/background.jpg') no-repeat scroll center center / cover;
+    display: table;
+    height: 90%;
+    width: 100%;
+}
+
+#banner-heading {
+    display: table-cell;
+    padding: 2em 0;
+    vertical-align: middle;
+}
+
+#banner h1 {
+    color: #fbfbfb;
+    display: block;
+    font-family: "Open Sans",sans-serif;
+    font-size: 2.75rem;
+    font-weight: normal;
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+    padding: 0.2em;
+}
+
+#banner .countdown {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+}
+
+#banner-full {
+    display: block;
+    height: 40%;
+    overflow: hidden;
+    width: 100%;
+}
+
+    #banner-full img {
+        display: block;
+        margin-top: -40%;
+        width: 100%;
+    }
+
+#tile-x5 .tile .tile-content,
+#tile-large-x1 .tile-large .tile-content,
+#tile-large-x3 .tile-large .tile-content {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+@media screen and (max-width: 1400px) {
+    #tile-large-x3 {
+        width: 708px !important;
+        min-width: 708px !important;
+    }
+
+    #tile-large-x1 {
+        width: 354px !important;
+        min-width: 354px !important;
+    }
+
+    #tile-x5 {
+        width: 792px !important;
+        min-width: 792px !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #tile-large-x3 {
+        width: 700px !important;
+        min-width: 700px !important;
+    }
+
+    #tile-large-x1 {
+        width: 350px !important;
+        min-width: 350px !important;
+    }
+
+    #tile-x5 {
+        width: 784px !important;
+        min-width: 784px !important;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    #tile-large-x1 .tile-large .image-overlay,
+    #tile-large-x3 .tile-large .image-overlay {
+        display: block;
+        position: relative !important;
+        width: 100%;
+        background: #fbfbfb;
+        text-align: center;
+        opacity: 1 !important;
+        height: 145px;
+        padding: 0.7em 1em;
+    }
+
+        #tile-large-x1 .tile-large .image-overlay h4,
+        #tile-large-x3 .tile-large .image-overlay h4 {
+            font-size: 1.2em;
+        }
+
+        #tile-large-x1 .tile-large .image-overlay p,
+        #tile-large-x3 .tile-large .image-overlay p {
+            font-size: 0.9em;
+        }
+
+    #tile-large-x1 .tile-large .tile-content .image-container,
+    #tile-large-x1 .tile-large .tile-content,
+    #tile-large-x1 .tile-large .image-container .frame,
+    #tile-large-x3 .tile-large .tile-content .image-container,
+    #tile-large-x3 .tile-large .tile-content,
+    #tile-large-x3 .tile-large .image-container .frame {
+        height: auto;
+    }
+
+    #tile-large-x1 .tile-large,
+    #tile-large-x3 .tile-large {
+        height: 455px;
+    }
+
+    #tile-x3 .tile .image-overlay {
+        display: block;
+        position: relative !important;
+        width: 100%;
+        background: #fbfbfb;
+        text-align: center;
+        opacity: 1 !important;
+        height: 145px;
+        padding: 0.7em 1em;
+    }
+
+        #tile-x3 .tile .image-overlay h4 {
+            font-size: 1.2em;
+        }
+
+        #tile-x3 .tile .image-overlay p {
+            font-size: 0.9em;
+        }
+
+    #tile-x5 .tile .image-overlay {
+        display: block;
+        position: relative !important;
+        width: 100%;
+        background: #fbfbfb;
+        text-align: center;
+        opacity: 1 !important;
+        height: 55px;
+        padding: 0.7em 1em;
+    }
+
+        #tile-x5 .tile .image-overlay h4 {
+            font-size: 0.8em;
+        }
+
+    #tile-x3 .tile .tile-content .image-container,
+    #tile-x3 .tile .tile-content,
+    #tile-x3 .tile .image-container .frame,
+    #tile-x5 .tile .tile-content .image-container,
+    #tile-x5 .tile .tile-content,
+    #tile-x5 .tile .image-container .frame {
+        height: auto;
+    }
+
+    #tile-x3 .tile {
+        height: 455px;
+    }
+
+    #tile-x5 .tile {
+        height: 175px;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+    #banner {
+        background-attachment: scroll;
+        background-position: center top;
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    #banner-about, #banner-contact {
+        background-attachment: scroll;
+        background-position: center top;
+        height: 15rem;
+        width: 100%;
+    }
+
+    #banner-heading {
+        display: block;
+        padding: 0 2rem;
+    }
+
+    #banner h1 {
+        font-size: 2rem;
+        max-width: 600px;
+        padding: 5rem 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .app-bar.fixed-top {
+        position: relative !important;
+    }
+
+    .page-content {
+        padding-top: 0 !important;
+    }
+
+    #tile-x5 {
+        width: 640px !important;
+        min-width: 640px !important;
+    }
+
+    #tile-large-x1 {
+        width: 288px !important;
+        min-width: 288px !important;
+    }
+
+    #tile-large-x3 {
+        width: 576px !important;
+        min-width: 576px !important;
+    }
+
+        #tile-large-x1 .tile-large .image-overlay,
+        #tile-large-x3 .tile-large .image-overlay {
+            height: 145px;
+        }
+
+        #tile-large-x1 .tile-large,
+        #tile-large-x3 .tile-large {
+            height: 393px;
+        }
+
+    #tile-x3 .tile .image-overlay h4 {
+        font-size: 1.0em;
+    }
+
+    #tile-x3 .tile .image-overlay p {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 719px) {
+    #tile-x5 {
+        width: 480px !important;
+        min-width: 480px !important;
+    }
+
+    #banner {
+        background-attachment: scroll;
+        background-position: center top;
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    #banner-heading {
+        display: block;
+        padding: 0 2rem;
+    }
+
+    #banner h1 {
+        font-size: 1.5rem;
+        max-width: 500px;
+        padding: 4rem 0;
+    }
+
+    #banner-about, #banner-contact {
+        background-attachment: scroll;
+        background-position: center top;
+        height: 15rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .page-content {
+        padding-top: 32px;
+    }
+
+    #tile-x5 {
+        width: 474px !important;
+        min-width: 474px !important;
+    }
+
+    #tile-large-x1 {
+        width: 284px !important;
+        min-width: 284px !important;
+    }
+
+    #tile-large-x3 {
+        width: 568px !important;
+        min-width: 568px !important;
+    }
+
+        #tile-large-x1 .tile-large .image-overlay,
+        #tile-large-x3 .tile-large .image-overlay {
+            height: 145px;
+        }
+
+        #tile-large-x1 .tile-large,
+        #tile-large-x3 .tile-large {
+            height: 393px;
+        }
+}
+
+@media only screen and (max-width: 570px) {
+    #tile-x5 {
+        width: 316px !important;
+        min-width: 316px !important;
+    }
+
+    #tile-large-x1,
+    #tile-large-x3 {
+        width: 284px !important;
+        min-width: 284px !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #banner h1 {
+        font-size: 1.2rem;
+        max-width: 85%;
+    }
+
+    #banner-heading {
+        display: block;
+        padding: 0 4%;
+    }
+
+    #banner-about, #banner-contact {
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: cover;
+        height: 10rem;
+        width: 100%;
+    }
+
+    #tile-large-x1 .tile-large .image-overlay,
+    #tile-large-x3 .tile-large .image-overlay {
+        height: 145px;
+    }
+
+    #tile-large-x1 .tile-large,
+    #tile-large-x3 .tile-large {
+        height: 393px;
+    }
+}
+
+@media only screen and (max-width: 305px) {
+    #tile-large-x1 .tile-large .image-overlay,
+    #tile-large-x3 .tile-large .image-overlay {
+        height: 113px;
+    }
+
+    #tile-large-x1 .tile-large,
+    #tile-large-x3 .tile-large {
+        height: 361px;
+    }
+}
