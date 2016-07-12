@@ -1,1 +1,0 @@
-{% assign none = true %}{% for page in site.pages %}{% if page.title == include.name %}[{{page.title}}]({{page.url | prepend: site.baseurl}}){% assign none = false %}{% break %}{% endif %}{% endfor %}{% if none == true %}{{include.name}}{% endif %}
