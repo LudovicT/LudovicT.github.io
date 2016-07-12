@@ -194,8 +194,8 @@ a {
             }
 
 #banner {
-    background: #000000 url('images/background.jpg') no-repeat scroll center center / cover;
-    background: rgba(0, 0, 0, 0) url('images/background.jpg') no-repeat scroll center center / cover;
+    background: #000000 url('Images/background.jpg') no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url('Images/background.jpg') no-repeat scroll center center / cover;
     display: table;
     height: 90%;
     width: 100%;
