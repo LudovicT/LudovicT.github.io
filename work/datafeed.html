@@ -14,6 +14,7 @@
 
     <script src="../Scripts/modernizr-2.8.3.js"></script>
 
+    <link rel="shortcut icon" type="image/png" href="../favicon.ico">
 </head>
 <body>
     <div>
@@ -55,10 +56,23 @@
             <p>DataFeed est compos&eacute; de :</p>
 
 <ul>
-	<li>Un ensemble de Windows Services permettant la communication avec Bloomberg via SFTP</li>
-	<li>Des batches r&eacute;cup&eacute;rants des donn&eacute;es de providers de donn&eacute;es ext&eacute;rieur (Bloomberg, FactSet, ...)&nbsp;</li>
-	<li>Un cache custom de donn&eacute;es sous Sql Server pour &eacute;viter les temps d&#39;attentes li&eacute;e aux r&eacute;cup&eacute;ration via les providers..</li>
-	<li>Un Windows Service permetant de mettre des donn&eacute;es en cache &agrave; partir de requ&egrave;tes utilisateur.</li>
+	<li>Un ensemble de <a href="../skill/net-framework.html#ServiceWindows">services Windows</a> permettant la communication avec Bloomberg via SFTP.</li>
+	<li>Des batchs r&eacute;cup&eacute;rant des donn&eacute;es de providers de donn&eacute;es ext&eacute;rieur (Bloomberg, FactSet, ...)&nbsp;</li>
+	<li>Un cache custom de donn&eacute;es sous <a href="../skill/base-de-donnees.html#SQLServer">SQL Server</a> pour &eacute;viter les temps d&#39;attentes li&eacute;e aux r&eacute;cup&eacute;rations via les providers.</li>
+	<li>Un <a href="../skill/net-framework.html#ServiceWindows">service Windows</a> permettant de mettre des donn&eacute;es en cache &agrave; partir de requ&ecirc;tes utilisateur, avec une ex&eacute;cution parall&egrave;le de multiples requ&ecirc;tes.</li>
+	<li>Deux services <a href="../skill/net-framework.html#WCF">WCF</a>, un pour r&eacute;cup&eacute;rer les donn&eacute;es des providers en direct ou par le cache et un pour ins&eacute;rer des requ&ecirc;tes &agrave; mettre en cache et v&eacute;rifier le statuts du cache.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>J&#39;ai personnellement particip&eacute; &agrave; :</p>
+
+<ul>
+	<li>La maintenance et &agrave; l&#39;&eacute;volution des <a href="../skill/net-framework.html#ServiceWindows">services Windows</a> d&eacute;j&agrave; existants pour la communication avec Bloomberg.</li>
+	<li>La maintenance des batchs r&eacute;cup&eacute;rant les donn&eacute;es des providers.</li>
+	<li>La mise en place int&eacute;grale du cache sous <a href="../skill/base-de-donnees.html#SQLServer">SQL Server</a>, la v&eacute;rification de ses performances et son optimisation (index, plan d&#39;ex&eacute;cution, ...)</li>
+	<li>Le d&eacute;veloppement complet du <a href="../skill/net-framework.html#ServiceWindows">service Windows</a>.</li>
+	<li>Le d&eacute;veloppement complet des deux services <a href="../skill/net-framework.html#WCF">WCF</a> accompagn&eacute; de leur test unitaires.</li>
 </ul>
 
         </div>
