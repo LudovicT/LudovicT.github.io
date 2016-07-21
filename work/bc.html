@@ -14,7 +14,7 @@
 
     <script src="../Scripts/modernizr-2.8.3.js"></script>
 
-    <link rel="shortcut icon" type="image/png" href="../favicon.ico?">
+    <link rel="shortcut icon" type="image/png" href="../favicon.ico">
 </head>
 <body>
     <div>
@@ -53,7 +53,22 @@
             <p>Projet de jeu multijoueur dans un univers massif.</p>
         </div>
         <div id="work">
-            <p>En cours de r&eacute;daction</p>
+            <p>B&amp;C, pour &quot;Build And Conquer&quot; est un jeu qui se veux &eacute;voluer dans un univers tr&egrave;s vaste et en multi-joueur, je suis en charge du c&ocirc;t&eacute; technique du projet.<br />
+Originalement d&eacute;velopp&eacute; sous Unreal Engine 4, principalement en blueprint, le moteur du jeu &agrave; ensuite chang&eacute; pour Unity apr&egrave;s que nous ayons rencontr&eacute; des probl&egrave;mes techniques sur la gestion des coordonn&eacute;es.<br />
+Ce projet est mis en &oelig;uvre par une tr&egrave;s petite &eacute;quipe, nous ne sommes que deux d&eacute;veloppeurs.<br />
+<br />
+J&#39;ai donc pu mettre en place des solutions qui permettent de contourner certains probl&egrave;mes que notre projets &agrave; put rencontrer tel que :</p>
+
+<ul>
+	<li>L&#39;utilisation de nombre &agrave; virgule flottante &agrave; simple pr&eacute;cision pour la gestion des coordonn&eacute;es, cela limite l&#39;espace maximum de d&eacute;placement, 20km sur UE4.
+	<ul>
+		<li>On peut alors avoir recours &agrave; des techniques comme l&#39;origin shifting qui consiste &agrave; bouger le monde autour de l&#39;avatar du joueur au lieu de bouger l&#39;avatar.</li>
+		<li>On peut aussi construire un syst&egrave;me de coordonn&eacute;es avanc&eacute; pour d&eacute;coupl&eacute; les coordonn&eacute;es r&eacute;elles des coordonn&eacute;es affich&eacute;es.</li>
+	</ul>
+	</li>
+	<li>La mise en place d&#39;un moteur de g&eacute;n&eacute;ration proc&eacute;durale permettant la construction de l&#39;univers &agrave; partir de seed.</li>
+	<li>Les probl&eacute;matiques r&eacute;seaux pour faire du multijoueur.</li>
+</ul>
 
         </div>
         <div class="align-center padding30">
