@@ -50,29 +50,34 @@
             <h1>
                 DataFeed
             </h1>
-            <p>Suite logicielle qui r&#233;cup&#232;re des donn&#233;es financi&#232;res provenant de fournisseurs ext&#233;rieur (Bloomberg, Factset, ...) pour &#234;tre utiliser dans des syst&#232;mes de l&#39;entreprise.</p>
+            <p>Suite logicielle qui r&#233;cup&#232;re des donn&#233;es financi&#232;res provenant de fournisseurs ext&#233;rieures (Bloomberg, Factset, ...) pour &#234;tre utiliser dans des syst&#232;mes de l&#39;entreprise.</p>
         </div>
         <div id="work">
-            <p>DataFeed est compos&eacute; de :</p>
+            <p style="text-align:justify">DataFeed est une suite de programmes utilis&eacute;s chez Candriam. Candriam &eacute;tant une soci&eacute;t&eacute; de gestion d&#39;actifs, il est n&eacute;cessaire de r&eacute;cup&eacute;rer des donn&eacute;es financi&egrave;res pour les exploiter. DataFeed sert &agrave; r&eacute;cup&eacute;rer des donn&eacute;es financi&egrave;res n&eacute;cessaires au bon fonctionnement des diff&eacute;rents syst&egrave;mes de l&#39;entreprise.</p>
+
+<p style="text-align:justify">J&#39;ai notamment mis en place un syst&egrave;me de r&eacute;cup&eacute;ration des donn&eacute;es via une SOA de Bloomberg (Data License Web Services).<br />
+J&#39;ai &eacute;galement mis en place un syst&egrave;me de cache pour pr&eacute;-ex&eacute;cuter des r&eacute;cup&eacute;rations de donn&eacute;es et ainsi &eacute;viter aux &eacute;quipes business les temps d&#39;attentes associ&eacute;es &agrave; la r&eacute;cup&eacute;ration de ces donn&eacute;es (1min et plus).</p>
+
+<p style="text-align:justify">DataFeed est compos&eacute; de :</p>
 
 <ul>
-	<li>Un ensemble de <a href="../skill/net-framework.html#ServiceWindows">services Windows</a> permettant la communication avec Bloomberg via SFTP.</li>
-	<li>Des batchs r&eacute;cup&eacute;rant des donn&eacute;es de providers de donn&eacute;es ext&eacute;rieur (Bloomberg, FactSet, ...)&nbsp;</li>
-	<li>Un cache custom de donn&eacute;es sous <a href="../skill/base-de-donnees.html#SQLServer">SQL Server</a> pour &eacute;viter les temps d&#39;attentes li&eacute;e aux r&eacute;cup&eacute;rations via les providers.</li>
-	<li>Un <a href="../skill/net-framework.html#ServiceWindows">service Windows</a> permettant de mettre des donn&eacute;es en cache &agrave; partir de requ&ecirc;tes utilisateur, avec une ex&eacute;cution parall&egrave;le de multiples requ&ecirc;tes.</li>
-	<li>Deux services <a href="../skill/net-framework.html#WCF">WCF</a>, un pour r&eacute;cup&eacute;rer les donn&eacute;es des providers en direct ou par le cache et un pour ins&eacute;rer des requ&ecirc;tes &agrave; mettre en cache et v&eacute;rifier le statuts du cache.</li>
+	<li style="text-align:justify">Un ensemble de <a href="../skill/net-framework.html#ServiceWindows">services Windows</a> permettant la communication avec Bloomberg via SFTP.</li>
+	<li style="text-align:justify">Des batchs r&eacute;cup&eacute;rant des donn&eacute;es de providers de donn&eacute;es ext&eacute;rieures (Bloomberg, FactSet, ...)&nbsp;</li>
+	<li style="text-align:justify">Un cache custom de donn&eacute;es sous <a href="../skill/base-de-donnees.html#SQLServer">SQL Server</a> pour &eacute;viter les temps d&#39;attentes li&eacute;s aux r&eacute;cup&eacute;rations via les providers.</li>
+	<li style="text-align:justify">Un <a href="../skill/net-framework.html#ServiceWindows">service Windows</a> permettant de mettre des donn&eacute;es en cache &agrave; partir de requ&ecirc;tes utilisateurs, avec une ex&eacute;cution parall&egrave;le de multiples requ&ecirc;tes.</li>
+	<li style="text-align:justify">Deux services <a href="../skill/net-framework.html#WCF">WCF</a>, un pour r&eacute;cup&eacute;rer les donn&eacute;es des providers en direct ou par le cache et un pour ins&eacute;rer des requ&ecirc;tes &agrave; mettre en cache et v&eacute;rifier le statuts du cache.</li>
 </ul>
 
-<p>&nbsp;</p>
+<p style="text-align:justify">&nbsp;</p>
 
-<p>J&#39;ai personnellement particip&eacute; &agrave; :</p>
+<p style="text-align:justify">J&#39;ai personnellement particip&eacute; &agrave; :</p>
 
 <ul>
-	<li>La maintenance et &agrave; l&#39;&eacute;volution des <a href="../skill/net-framework.html#ServiceWindows">services Windows</a> d&eacute;j&agrave; existants pour la communication avec Bloomberg.</li>
-	<li>La maintenance des batchs r&eacute;cup&eacute;rant les donn&eacute;es des providers.</li>
-	<li>La mise en place int&eacute;grale du cache sous <a href="../skill/base-de-donnees.html#SQLServer">SQL Server</a>, la v&eacute;rification de ses performances et son optimisation (index, plan d&#39;ex&eacute;cution, ...)</li>
-	<li>Le d&eacute;veloppement complet du <a href="../skill/net-framework.html#ServiceWindows">service Windows</a>.</li>
-	<li>Le d&eacute;veloppement complet des deux services <a href="../skill/net-framework.html#WCF">WCF</a> accompagn&eacute; de leur test unitaires.</li>
+	<li style="text-align:justify">La maintenance et &agrave; l&#39;&eacute;volution des <a href="../skill/net-framework.html#ServiceWindows">services Windows</a> d&eacute;j&agrave; existants pour la communication avec Bloomberg.</li>
+	<li style="text-align:justify">La maintenance des batchs r&eacute;cup&eacute;rant les donn&eacute;es des providers.</li>
+	<li style="text-align:justify">La mise en place int&eacute;grale du cache sous <a href="../skill/base-de-donnees.html#SQLServer">SQL Server</a>, la v&eacute;rification de ses performances et son optimisation (index, plan d&#39;ex&eacute;cution, ...)</li>
+	<li style="text-align:justify">Le d&eacute;veloppement complet du <a href="../skill/net-framework.html#ServiceWindows">service Windows</a>.</li>
+	<li style="text-align:justify">Le d&eacute;veloppement complet des deux services <a href="../skill/net-framework.html#WCF">WCF</a> accompagn&eacute; de leurs tests unitaires.</li>
 </ul>
 
         </div>
@@ -111,7 +116,7 @@
                 <div class="image-overlay op-blacker">
                     <h4 class="text-bold">.NET Framework</h4>
                     <p>
-                        D&#233;veloppement de batch, applications, site web et autres type de programmes.
+                        D&#233;veloppement de batchs, applications, site web et autres types de programmes.
                     </p>
                 </div>
             </a>
@@ -129,7 +134,7 @@
                 <div class="image-overlay op-blacker">
                     <h4 class="text-bold">Base de donn&#233;es</h4>
                     <p>
-                        Cr&#233;ation et maintiens de Base de donn&#233;es
+                        Cr&#233;ation et maintien de Base de donn&#233;es
                     </p>
                 </div>
             </a>
@@ -147,7 +152,7 @@
                 <div class="image-overlay op-blacker">
                     <h4 class="text-bold">Autonomie</h4>
                     <p>
-                        Pouvoir se gouverner soi-m&#234;me, selon ses propres r&#232;gles.
+                        Pouvoir se gouverner soi-m&#234;me, en applicant les r&#232;gles.
                     </p>
                 </div>
             </a>
